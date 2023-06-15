@@ -1,0 +1,146 @@
+/* CSS Variables */
+:root {
+  --primary-color: #21618C;
+  --secondary-color: #EBF5FB;
+  --font-size: 28px;
+  --container-width: 90%;
+  --container-height: 100%;
+}
+
+/* Custom font for all text */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #333333;
+}
+
+/* Heading styles */
+h1 {
+  color: var(--primary-color);
+  font-size: var(--font-size);
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+/* Container styles */
+.container {
+  background-color: var(--secondary-color);
+  width: var(--container-width);
+  height: var(--container-height);
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  margin: auto;
+}
+
+/* Paragraph styles */
+p {
+  margin-bottom: 10px;
+}
+
+/* Unordered list styles */
+ul {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+/* Table styles */
+table {
+  background-color: #85C1E9;
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #5DADE2;
+  text-align: center;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #5DADE2;
+}
+
+td {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 1px solid #5DADE2;
+  padding: 10px;
+}
+
+tr:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Use CSS selectors and specificity to style specific elements */
+ul li:first-child {
+  color: var(--primary-color);
+  font-style: italic;
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+
+table tr:first-child {
+  background-color: #ff4a4a;
+  color: white;
+}
+
+table tr:last-child td {
+  font-weight: bold;
+}
+
+table td:first-child {
+  font-style: italic;
+}
+
+/* Utilize pseudo-classes and box model concepts */
+
+/* Links styles */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f75620;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #990000;
+  text-decoration: underline;
+}
+
+
+/* pseudo-element */
+.decorated-element {
+  margin-bottom: 20px;
+}
+
+.decorated-element::before {
+  content: "Before";
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px;
+}
+
+.decorated-element::after {
+  content: "After";
+  background-color: #3498db;
+  color: white;
+  padding: 5px;
+}
